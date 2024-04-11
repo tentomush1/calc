@@ -13,7 +13,10 @@ for  m in range (sys.maxsize):
 	elif str(k) == '-':
 		print(int(i) - int(j))
 	elif str(k) == '/':
-		print(float(i) / float(j))	
+		if int(j) == 0:
+			print("u can't devide by 0")
+		else:
+			print(float(i) / float(j))	
 	else:
 		print("only '+' '-' '*' '/' are valid operations")
 	m += m
